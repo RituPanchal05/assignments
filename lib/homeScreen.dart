@@ -150,7 +150,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 itemCount: GlobalVariables.foodData.length,
                 itemBuilder: (context, index) {
                   return Transform.translate(
-                    offset: Offset(0, index % 2 != 0 ? 50 : 100), // Offset down odd-indexed items
+                    offset: Offset(0, index % 2 != 0 ? 50 : 100), 
                     child: FoodCard(food: GlobalVariables.foodData[index]),
                   );
                 },
@@ -177,7 +177,7 @@ class FoodCard extends StatelessWidget {
             color: const Color.fromARGB(255, 197, 197, 197).withOpacity(0.5),
             spreadRadius: 1,
             blurRadius: 20,
-            offset: const Offset(5, 5), // changes position of shadow
+            offset: const Offset(5, 5), 
           ),
         ],
         color: Colors.white,
